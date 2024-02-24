@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Test Drive</title>
+    <link rel="stylesheet" href="../css//style.css">
+    <link rel="stylesheet" href="..//bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<!--Header-->
+<header style="top:0; justify-content: space-between;">
+    <!--Logo-->
+    <a href="Home.html" style="float: left;"><img src="\Pics\Logo-removebg-preview.png" width="200" height="100" alt="Logo"></a>
+    <!--Menus Horizontal-->
+    <nav>
+        <a href="Home.html">
+            <h3>Home</h3>
+        </a>
+        <a href="AboutUs.html">
+            <h3>About Us</h3>
+        </a>
+        <a href="Vehicles.html">
+            <h3>Vehicles</h3>
+        </a>
+        <a href="BookTD.html">
+            <h3>Book a Test Drive</h3>
+        </a>
+        <a id="login-btn" style="background: none; cursor: pointer;">
+            <h3>Login</h3>
+        </a>
+    </nav>
+</header>
+<body>
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" style="font-size: medium;" placeholder="Enter your email">
+            <input type="password" class="box" style="font-size: medium"placeholder="Enter your password">
+            <button type="submit" class="btn">Login</button>
+            <p style="font-size: medium;">Don't have an account? <a href="#" id="reg">Register</a></p>
+
+        </form>
+    </div>
+    <div class="login-form-container1">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>Register</h3>
+            <input type="email" class="box" style="font-size: medium;" placeholder="Enter your email">
+            <input type="password" class="box" style="font-size: medium;" placeholder="Enter your password">
+            <input type="ConfirmPassword" style="font-size: medium;" class="box" placeholder="Confirm password">
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+    
+    <img src="\Pics\teahub.io-audi-rs5-wallpaper-3097363.jpg" style="position: absolute; width: 100%; z-index: 2; alt: Audi R8 in garage;">
+    <section style="z-index: 3;">
+        <form action="/submit-test-drive" method="post">
+
+            <h1 style="margin-bottom:15% ;">Book a Test Drive</h1>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="carModel">Car Model:</label>
+            <select id="carModel" name="carModel" required>
+                <option value="model1">2023 Dodge Challenger SRT Demon 170</option>
+                <option value="model2">2023 Ford F-150</option>
+                <option value="model3">2024 Chevrolet Camaro</option>
+                <option value="model4">2022 Ford Mustang Shelby GT500</option>
+                <option value="model5">2022 GMC Sierra 1500 Limited AT4</option>
+                <option value="model6">2024 Nissan GT-R</option>
+            </select>
+
+            <label for="preferredDate">Preferred Date:</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+
+            <button type="submit">Book Test Drive</button>
+        </form>
+    </section>
+</body>
+<!--social media and credits-->
+<footer>
+    <h3 style="text-align: center;">Pryme Motors on Social Media</h3>
+    <div class="SocialMedia">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p class="Copyright" style="text-align: center;">&copy; Copyright 2024 Pryme Motors Company. All rights reserved.</p>
+</footer>
+<script src="js/Book.js"></script>
+</html>
